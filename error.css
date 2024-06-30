@@ -1,37 +1,14 @@
-.Navbar{
-    display:grid;
-    grid-template-columns: 300px 1fr 110px;
-    margin:60px;
-}
+/* Navbar Styles (already handled by global.css) */
 
-.Logo_img{
-    width:238px;
-    height:70px;
-}
-.search_bar{
-    margin-top:20px;
-    margin-left:10px;
-    margin-right:150px;
-    height: 50%;
-    width:90%;
-    border-radius:4px;
-    border-color: #000000;
-}
-.Navbar_Icons{
-    display:flex;
-    gap:42px;
-    margin-top:25px;
-}
-.Icons{
-    height:33px;
-    width:33px;
-}
+/* Body and General Styles */
 body {
-    overflow: hidden;
     background-color: white;
     color: black; 
-    margin-top: 60px;
-    
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    margin: 0;
 }
 
 h1 {
@@ -39,29 +16,51 @@ h1 {
     font-weight: bold;
 }
 
-.box{
-    margin: 60px;
+.box {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+    box-sizing: border-box;
 }
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    text-align: center;
+}
+
 .btn-primary {
     background-color: rgba(255, 125, 5, 0.3);
     border: none;
     color: black;
-    margin: 30px;
+    padding: 0.375rem 0.75rem;
     border-radius: 4px;
-    margin-bottom: 250px;
-    margin-top: 60px;
-   
+    cursor: pointer;
+    transition: background-color 0.15s ease-in-out, color 0.15s ease-in-out;
 }
 
-.error_image{
-        height:90%;
-        width: 100%;
-        object-position: cover;
-      
-        
-    }
+.btn-primary:hover {
+    background-color: rgba(255, 125, 5, 0.5);
+}
 
-    /* Media Queries */
+.error_image {
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+    max-height: 60vh; /* Adjust max height to ensure image doesn't overflow */
+}
+
+p {
+    margin: 20px 0;
+}
+
+/* Media Queries */
 @media (max-width: 1200px) {
     .Navbar {
         grid-template-columns: 200px 1fr 80px;
@@ -98,14 +97,6 @@ h1 {
     .Navbar_Icons {
         gap: 15px;
     }
-
-    .Body_content {
-        margin: 20px 40px;
-    }
-
-    .Box {
-        flex: 1 1 calc(33.333% - 20px);
-    }
 }
 
 @media (max-width: 768px) {
@@ -124,14 +115,6 @@ h1 {
 
     .Navbar_Icons {
         gap: 10px;
-    }
-
-    .Body_content {
-        margin: 20px;
-    }
-
-    .Box {
-        flex: 1 1 calc(50% - 20px);
     }
 }
 
@@ -154,13 +137,5 @@ h1 {
     .Navbar_Icons {
         justify-content: center;
         gap: 5px;
-    }
-
-    .Body_content {
-        margin: 20px 10px;
-    }
-
-    .Box {
-        flex: 1 1 100%;
     }
 }

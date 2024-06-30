@@ -41,15 +41,23 @@ body {
     margin-bottom: 30px;
   }
 
- .btn  .btn-primary {
-        background-color: rgba(255, 125, 5, 0.3);
-        border: none;
-        color: black;
-        margin: 30px;
-        border-radius: 4px;
-        padding: 50 px;
-        margin-top: 0px;
-      }
+  .btn.btn-primary {
+    background-color: rgba(255, 125, 5, 0.3);
+    border: none;
+    color: black;
+    border-radius: 4px;
+    padding: 0.375rem 0.75rem; /* Adjust padding to your preference /
+    cursor: pointer;
+    text-align: center;
+    display: inline-block;
+    transition: background-color 0.15s ease-in-out, color 0.15s ease-in-out;
+    margin-top: 0px; / Adjust margin-top as needed */
+    width: 100%;
+}
+
+.btn.btn-primary:hover {
+    background-color: rgba(255, 125, 5, 0.5);
+}
 
 
   .forgot-password {
@@ -84,5 +92,4 @@ body {
   .text{
     margin-top: 20px;
   }
-
   

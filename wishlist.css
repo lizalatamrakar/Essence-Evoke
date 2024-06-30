@@ -39,3 +39,7 @@ tr.border_bottom td {
     border-radius: 4px;
    
 }
+
+.btn.btn-primary:hover {
+    background-color: rgba(255, 125, 5, 0.5);
+}
