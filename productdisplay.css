@@ -22,6 +22,11 @@
     gap:42px;
     margin-top:25px;
 }
+.heart{
+    margin-left: 156px;
+    margin-top: -35px;
+}
+
 .Icons{
     height:33px;
     width:33px;
@@ -47,4 +52,22 @@
 
 .img-fluid{
     margin-right: 60px;
+}
+
+
+@media (min-width: 768px) {
+    .col-md-10 {
+        flex: 0 0 auto;
+        width: 67.333333%;
+    }
+}
+
+
+.Body_content{
+    margin:60px;
+    display:flex;
+    margin-right:98px;
+    object-position: cover;
+    justify-content: space-between;
+ 
 }

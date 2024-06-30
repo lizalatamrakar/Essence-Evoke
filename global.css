@@ -11,3 +11,51 @@
     margin-left: auto;
     margin-right: auto;
 }
+
+@media (max-width: 992px) {
+    .Navbar {
+        grid-template-columns: 150px 1fr 60px;
+    }
+
+    .Logo_img {
+        width: 100px;
+        height: auto;
+    }
+
+    .Navbar_Icons {
+        gap: 15px;
+    }
+
+}
+
+@media (max-width: 768px) {
+    .Navbar {
+        grid-template-columns: 100px 1fr 50px;
+    }
+
+    .Logo_img {
+        width: 80px;
+        height: auto;
+    }
+
+    .Navbar_Icons {
+        gap: 10px;
+    }
+}
+
+@media (max-width: 576px) {
+    .Navbar {
+        grid-template-columns: 1fr;
+        margin: 20px;
+    }
+
+    .Logo_img {
+        width: 60px;
+        height: auto;
+    }
+
+    .Navbar_Icons {
+        justify-content: center;
+        gap: 5px;
+    }
+}
