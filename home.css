@@ -1,0 +1,53 @@
+.Navbar{
+    display:grid;
+    grid-template-columns: 300px 1fr 110px;
+    margin:60px;
+}
+
+.Logo_img{
+    width:238px;
+    height:70px;
+}
+.search_bar{
+    margin-top:20px;
+    margin-left:10px;
+    margin-right:150px;
+    height: 50%;
+    width:90%;
+    border-radius:4px;
+    border-color: #000000;
+}
+.Navbar_Icons{
+    display:flex;
+    gap:42px;
+    margin-top:25px;
+}
+.Icons{
+    height:33px;
+    width:33px;
+}
+.Second_box{
+    display: grid;
+    grid-template-columns: 1fr;
+    margin:60px;
+}
+.Second_box_image{
+    height:80%;
+    width: 100%;
+    object-position: cover;
+}
+.Body_content{
+    margin:60px;
+    display:flex;
+    margin-right:98px;
+    object-position: cover;
+    justify-content: space-between;
+ 
+}
+.Product_image{
+    margin-bottom: 30px;
+    height:80%;
+    width:120%;
+  
+  
+}

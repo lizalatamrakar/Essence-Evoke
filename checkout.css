@@ -1,0 +1,30 @@
+.Navbar{
+    display:grid;
+    grid-template-columns: 300px 1fr 110px;
+    margin:60px;
+}
+
+.Logo_img{
+    width:238px;
+    height:70px;
+}
+
+.Navbar_Icons{
+    display:flex;
+    gap:42px;
+    margin-top:25px;
+}
+.Icons{
+    height:33px;
+    width:33px;
+}
+.PaymentMethod{
+    padding-top: 5%;
+}
+.paymentImage{
+    padding-left: 5%;
+}
+
+.itemsInCart{
+    padding-bottom: 3%;
+}
