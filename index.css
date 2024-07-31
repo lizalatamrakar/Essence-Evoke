@@ -170,3 +170,16 @@ body {
         flex: 1 1 100%;
     }
 }
+
+
+.no-link-style {
+    color: inherit;
+    text-decoration: none;
+}
+
+.no-link-style:hover, 
+.no-link-style:focus, 
+.no-link-style:active {
+    color: inherit;
+    text-decoration: none;
+}
