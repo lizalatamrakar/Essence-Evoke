@@ -115,3 +115,46 @@ body {
         margin: 20px 0;
     }
 }
+
+.quantity-control {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 20px 0;
+}
+
+.quantity-btn {
+    background-color: white;
+    border: 1px solid #ddd;
+    padding: 5px 10px;
+    cursor: pointer;
+    font-size: 18px;
+    border-radius: 4px;
+}
+
+#quantity {
+    width: 40px;
+    text-align: center;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 7px;
+}
+
+
+
+input[type=text] {
+    width: 70%;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: white;
+    /* Hide the background image */
+    background-image: none;
+    /* Adjust padding if needed */
+    padding: 12px 20px;
+    /* Additional properties to ensure no icon is visible */
+    background-size: 0;
+    background-position: 0;
+}
+

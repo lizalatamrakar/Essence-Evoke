@@ -36,8 +36,15 @@
                 <h2>Velvet Lipstick<a href="wishlist.html"><img class="Icons" src="Icons/heart_66744.png" alt="icon" style="margin-left: 10px;"> </a> </h2>
             <br>
            <h5>Velvet Matte Lipstick series creates a matte velvety finish on your lips. <br>It nourishes and moisturizes your lips, thanks to Vitamin E and other moisturizing factors.<br></h5>
-            <br><h3>Rs. 850</h3>
-           <a href="login.html"> <p class="btn btn-primary" >ADD TO CART</p></a>
+            <h3>Rs. 850</h3>
+            <!-- Quantity Control -->
+    <div class="quantity-control">
+        <button class="quantity-btn" id="decrement">-</button>
+        <input type="text" id="quantity" value="1" readonly>
+        <button class="quantity-btn" id="increment">+</button>
+    </div>
+    <br>
+           <a href="login.html"> <p class="btn btn-primary" style="margin-bottom: 4%;" >ADD TO CART</p></a>
         </div>
     </div>
     <div class="row mt-5" style="padding-left: 5%; padding-right: 5%;">
@@ -163,5 +170,21 @@
       </style>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"></script>
+    <script>
+        document.getElementById("increment").addEventListener("click", function () {
+            let quantityInput = document.getElementById("quantity");
+            let currentValue = parseInt(quantityInput.value);
+            quantityInput.value = currentValue + 1;
+        });
+    
+        document.getElementById("decrement").addEventListener("click", function () {
+            let quantityInput = document.getElementById("quantity");
+            let currentValue = parseInt(quantityInput.value);
+            if (currentValue > 1) { // Ensure quantity does not go below 1
+                quantityInput.value = currentValue - 1;
+            }
+        });
+    </script>
+    
 </body>
 </html>
